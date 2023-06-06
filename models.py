@@ -38,12 +38,12 @@ class Game():
 			self.block_size, self.block_size])
 	
 	def render_table(self):
-		for column in range(game.columns):
-			for row in range(game.rows):
+		for column in range(self.columns):
+			for row in range(self.rows):
 				if (row + column) % 2 == 0:
-					color = game.block_color_1
+					color = self.block_color_1
 				else:
-					color = game.block_color_2
+					color = self.block_color_2
 				
 				self.render_block(column, row, color)
 	
